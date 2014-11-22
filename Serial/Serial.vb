@@ -13,10 +13,6 @@ Public Class Serial
     Dim count As Integer
     Dim currdist As Integer
 
-    Private Sub Serial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     'Function ReceiveSerialData(Port As Integer) As String
     '    ' Receive strings from a serial port.
     '    Dim returnStr As String = ""
@@ -62,25 +58,15 @@ Public Class Serial
     End Sub
 
     Public Sub New()
-
-        ' Dieser Aufruf ist für den Designer erforderlich.
         InitializeComponent()
 
-        ' Fügen Sie Initialisierungen nach dem InitializeComponent()-Aufruf hinzu.
         COMport.PortName = "COM4"
         COMport.BaudRate = 9600
-        COMport.Open()
     End Sub
 
     Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
         COMport.PortName = "COM" & NumericUpDown1.Value
     End Sub
-
-    'Private Sub Receiver(ByVal sender As Object, ByVal e As SerialDataReceivedEventArgs) Handles COMport.DataReceived
-    '    RXbyte = COMport.ReadByte
-    '    Me.Invoke(New MethodInvoker(AddressOf Display))
-
-    'End Sub
 
     Private Sub COMport_DataReceived(sender As Object, e As SerialDataReceivedEventArgs) Handles COMport.DataReceived
         Dim lese As Integer = COMport.ReadLine()
@@ -96,14 +82,19 @@ Public Class Serial
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form1.Show()
+
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         My.Computer.Audio.Play(My.Resources.SIREN2, AudioPlayMode.Background)
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+    Private Sub Serial_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        COMport.Close()
+    End Sub
 
+    Private Sub Serial_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        COMport.Open()
     End Sub
 End Class

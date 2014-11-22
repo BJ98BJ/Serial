@@ -20,3 +20,15 @@ C:\Users\Björn\Documents\Visual Studio 2012\Projects\Serial\obj\Debug\WindowsAp
 C:\Users\Björn\Documents\Visual Studio 2012\Projects\Serial\obj\Debug\WindowsApplication1.Resources.resources
 C:\Users\Björn\Documents\Visual Studio 2012\Projects\Serial\obj\Debug\WindowsApplication1.Serial.resources
 C:\Users\Björn\Documents\Visual Studio 2012\Projects\Serial\obj\Debug\Serial.vbproj.GenerateResource.Cache
+C:\Users\Björn\Documents\GitHub\Serial\Serial\bin\Debug\Serial.exe.config
+C:\Users\Björn\Documents\GitHub\Serial\Serial\obj\Debug\Serial.exe
+C:\Users\Björn\Documents\GitHub\Serial\Serial\obj\Debug\Serial.xml
+C:\Users\Björn\Documents\GitHub\Serial\Serial\obj\Debug\Serial.pdb
+C:\Users\Björn\Documents\GitHub\Serial\Serial\bin\Debug\Serial.exe
+C:\Users\Björn\Documents\GitHub\Serial\Serial\bin\Debug\Serial.pdb
+C:\Users\Björn\Documents\GitHub\Serial\Serial\bin\Debug\Serial.xml
+C:\Users\Björn\Documents\GitHub\Serial\Serial\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\Björn\Documents\GitHub\Serial\Serial\obj\Debug\WindowsApplication1.Serial.resources
+C:\Users\Björn\Documents\GitHub\Serial\Serial\obj\Debug\Serial.vbproj.GenerateResource.Cache
+C:\Users\Björn\Documents\GitHub\Serial\Serial\obj\Debug\WindowsApplication1.LED_Leiste.resources
+C:\Users\Björn\Documents\GitHub\Serial\Serial\obj\Debug\WindowsApplication1.Start.resources
